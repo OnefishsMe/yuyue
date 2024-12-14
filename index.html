@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>社区问卷调查</title>
+  <link rel="stylesheet" href="styles.css"> <!-- 引入外部CSS文件，用于样式设置 -->
+</head>
+
+<body>
+  <form id="surveyForm">
+    <label for="communitySelect">选择社区：</label>
+    <select id="communitySelect">
+      <option value="">请选择社区</option>
+      <option value="社区A">社区A</option>
+      <option value="社区B">社区B</option>
+      <option value="社区C">社区C</option>
+    </select>
+    <div id="personalInfo" style="display: none;"> <!-- 初始隐藏个人信息填写部分 -->
+      <label for="age">年龄：</label>
+      <input type="text" id="age" placeholder="请输入年龄">
+      <label for="name">姓名：</label>
+      <input type="text" id="name" placeholder="请输入姓名">
+      <label for="phone">电话：</label>
+      <input type="text" id="phone" placeholder="请输入电话">
+      <label for="address">地址：</label>
+      <input type="text" id="address" placeholder="请输入地址">
+    </div>
+    <input type="submit" value="提交">
+  </form>
+  <script src="script.js"></script> <!-- 引入外部JavaScript文件，用于实现交互逻辑 -->
+</body>
+
+</html>
